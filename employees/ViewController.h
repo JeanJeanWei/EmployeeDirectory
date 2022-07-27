@@ -6,8 +6,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : BaseViewController <UITableViewDataSource, UITableViewDelegate>
+{
+    NSMutableArray *empList;
+    UITableView *empListView;
+    UIPopoverPresentationController *poppy;
+}
 
 
 @end
